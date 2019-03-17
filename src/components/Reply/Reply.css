@@ -1,0 +1,14 @@
+.reply-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.reply{
+    background-color: rgb(69, 98, 151);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-bottom: 3px;  
+    max-width: 75%;  
+
+  }

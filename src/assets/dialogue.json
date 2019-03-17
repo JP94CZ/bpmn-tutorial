@@ -1,22 +1,105 @@
 {
-	"pavelNaplava": {
-		"a": "Hello! I'm Pavel Náplava from CZM!",
-		"b": "Hey there Pavel! Hope you're doing great!"
-	},
-	"tomasMalinkovic": {
-		"a": "Hello! I'm Tomáš Malinkovič from ČOBKA!",
-		"b": "Hey there Tomáš! Hope to see you on saturday at our FIM session!"
-	},
-	"janKoci": {
-		"a": "Hello! I'm Jan Kočí from FEL!",
-		"b": "Hey there Jan! Hope you're doing great!"
-	},
-	"lukasZoubek": {
-		"a": "Hello! I'm Lukáš Zoubek from 85ka!",
-		"b": "Hey there Lukáš! Hope you're doing great!"
-	},
-	"alesGorecki": {
-		"a": "Hello! I'm the Moodle lover!",
-		"b": "Hey there Aleš! Hope you're doing great!"
-	}
+	"pavelNaplava": [
+		{
+			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "Hello Pavel, what's up with you?",
+			"id": 2,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 3",
+			"id": 3,
+			"followingId": false
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				},
+				{
+					"message": "ODPOVED 3",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		}
+	],
+	"tomasMalinkovic": [
+		{
+			"message": "Hello! I'm Tomík!",
+			"id": "",
+			"following": ""
+		},
+		{
+			"message": "Hey Tomík! How you doin' buddy?",
+			"id": "",
+			"following": ""
+		}
+	],
+	"janKoci": [
+		{
+			"message": "Hello! I'm Jan Kočí from CZM!",
+			"id": "",
+			"following": ""
+		},
+		{
+			"message": "Hello! Nice to finally meet you, Jan!",
+			"id": "",
+			"following": ""
+		}
+	],
+	"lukasZoubek": [
+		{
+			"message": "Hello! I'm Lukáš Zoubek from CZM!",
+			"id": "",
+			"following": ""
+		},
+		{
+			"message": "Hey, wasup?!",
+			"id": "",
+			"following": ""
+		}
+	],
+	"alesGorecki": [
+		{
+			"message": "Hello! I'm Aleš Górecki from CZM!",
+			"id": "",
+			"following": ""
+		},
+		{
+			"message": "Hello Aleš!",
+			"id": "",
+			"following": ""
+		}
+	]
 }

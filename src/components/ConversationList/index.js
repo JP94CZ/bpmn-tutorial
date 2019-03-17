@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ConversationListItem from '../ConversationListItem';
-import Toolbar from '../Toolbar';
-
-
+import ChapterToolbar from '../ChapterToolbar';
 import './ConversationList.css';
 
 export default class ConversationList extends Component {
@@ -15,12 +13,12 @@ export default class ConversationList extends Component {
   render() {
     return (
       <div className="conversation-list">
-        <Toolbar
-          convName = "BPMN"
-        />        {
+        <ChapterToolbar changeChapter={this.props.changeChapter}
+        />
+        {
           this.props.conversations.map(conversation =>
             <ConversationListItem
-              clicked = {() => this.props.clicked(conversation.id)}
+              clicked={() => this.props.clicked(conversation.id)}
               key={conversation.id}
               data={conversation}
             />
