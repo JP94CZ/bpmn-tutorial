@@ -4,13 +4,18 @@ import './ChapterToolbar.css'
 
 
 export default class ChapterToolbar extends Component {
+  
+  createNewChapterObject = (name, value) => {
+    return {label: name, value: value}
+  }
+
   render() {
-    const chapters = [
-      { label: "Tutorial", value: 0 },
-      { label: "Chapter 1", value: 1 },
-      { label: "Chapter 2", value: 2 },
-      { label: "Chapter 3", value: 3 },
-    ];
+    let chapters = [];
+    let i = 0;
+    while (i < this.props.chapters.length){
+      chapters.push(this.createNewChapterObject(this.props.chapters[i], i));
+      i++
+    }
 
     return (
       <div className='endBelow'>

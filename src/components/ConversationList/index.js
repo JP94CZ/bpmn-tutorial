@@ -14,6 +14,7 @@ export default class ConversationList extends Component {
     return (
       <div className="conversation-list">
         <ChapterToolbar changeChapter={this.props.changeChapter}
+        chapters={this.props.availableChaptersList}
         />
         {
           this.props.conversations.map(conversation =>

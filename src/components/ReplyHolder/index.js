@@ -13,7 +13,7 @@ export default class ReplyHolder extends Component {
                             clicked={() => this.props.clicked(index)}
                             message={reply.message}
                         />
-                    )
+                    ) 
                 }
             </div>
         )

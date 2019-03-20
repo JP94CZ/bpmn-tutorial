@@ -56,50 +56,222 @@
 	],
 	"tomasMalinkovic": [
 		{
-			"message": "Hello! I'm Tomík!",
-			"id": "",
-			"following": ""
+			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"id": 1,
+			"followingId": 2
 		},
 		{
-			"message": "Hey Tomík! How you doin' buddy?",
-			"id": "",
-			"following": ""
+			"message": "Hello Pavel, what's up with you?",
+			"id": 2,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 3",
+			"id": 3,
+			"followingId": false
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				},
+				{
+					"message": "ODPOVED 3",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
 		}
 	],
 	"janKoci": [
 		{
-			"message": "Hello! I'm Jan Kočí from CZM!",
-			"id": "",
-			"following": ""
+			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"id": 1,
+			"followingId": 2
 		},
 		{
-			"message": "Hello! Nice to finally meet you, Jan!",
-			"id": "",
-			"following": ""
+			"message": "Hello Pavel, what's up with you?",
+			"id": 2,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 3",
+			"id": 3,
+			"followingId": false
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				},
+				{
+					"message": "ODPOVED 3",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
 		}
 	],
 	"lukasZoubek": [
 		{
-			"message": "Hello! I'm Lukáš Zoubek from CZM!",
-			"id": "",
-			"following": ""
+			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"id": 1,
+			"followingId": 2
 		},
 		{
-			"message": "Hey, wasup?!",
-			"id": "",
-			"following": ""
+			"message": "Hello Pavel, what's up with you?",
+			"id": 2,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 3",
+			"id": 3,
+			"followingId": false
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				},
+				{
+					"message": "ODPOVED 3",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
 		}
 	],
 	"alesGorecki": [
 		{
-			"message": "Hello! I'm Aleš Górecki from CZM!",
-			"id": "",
-			"following": ""
+			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"id": 1,
+			"followingId": 2
 		},
 		{
-			"message": "Hello Aleš!",
-			"id": "",
-			"following": ""
+			"message": "Hello Pavel, what's up with you?",
+			"id": 2,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 3",
+			"id": 3,
+			"followingId": false
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
+		},
+		{
+			"replies":[
+				{
+					"message": "ODPOVED 1",
+					"followingId": 3
+				},
+				{
+					"message": "ODPOVED 2",
+					"followingId": 4
+				},
+				{
+					"message": "ODPOVED 3",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "TEXT REPLY 4",
+			"id": 4,
+			"followingId": true
 		}
 	]
 }

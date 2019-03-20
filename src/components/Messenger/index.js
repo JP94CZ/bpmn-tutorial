@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ConversationList from '../ConversationList';
 import MessageList from '../MessageList/';
+import BpmnModelerComponent from '../BpmnModelerComponent/';
 import './Messenger.css';
 import naplava from '../../assets/pictures/pavel_naplava.png';
 import zoubek from '../../assets/pictures/lukas_zoubek.jpg';
@@ -13,6 +14,7 @@ export default class Messenger extends Component {
   state = {
     chapters: [
       {
+        name: 'Tutorial',
         conversations: [
           {
             photo: naplava,
@@ -35,9 +37,10 @@ export default class Messenger extends Component {
         ]
       },
       {
+        name: 'Chapter 1',
         conversations: [
 
-           {
+          {
             photo: koci,
             name: `Jan Kočí`,
             title: 'Big Boss',
@@ -48,8 +51,9 @@ export default class Messenger extends Component {
         ]
       },
       {
+        name: 'Chapter 2',
         conversations: [
- 
+
           {
             photo: zoubek,
             name: `Lukáš Zoubek`,
@@ -62,7 +66,8 @@ export default class Messenger extends Component {
         ]
       },
       {
-        conversations: [      
+        name: 'Chapter 3',
+        conversations: [
           {
             photo: gorecki,
             name: `Aleš Górecki`,
@@ -77,10 +82,19 @@ export default class Messenger extends Component {
     ]
     ,
     actualConversation: 0,
-    actualChapter: 1
+    actualChapter: 0,
+    availableChaptersAmount: 2
   }
 
-
+  getAvailableChaptersNames = () => {
+      let chapterNames = [];
+      let i = 0;
+      while(i < this.state.availableChaptersAmount){
+        chapterNames.push(this.state.chapters[i].name);
+        i++;
+      }
+      return chapterNames;
+  }
 
   changeConversation = (id) => {
     this.setState({ actualConversation: id })
@@ -96,8 +110,16 @@ export default class Messenger extends Component {
   }
 
   changeChapter = (chapter) => {
-    this.setState({actualChapter: chapter, actualConversation: 0})
+    this.setState({ actualChapter: chapter, actualConversation: 0 })
   }
+  
+  getAvailableChapters
+
+  place = <MessageList
+    convName={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].name + " - " + this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].title}
+    convDataSource={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].conversation}
+    conversationProgress={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].conversationProgress}
+    reply={this.progressConversation} />;
 
   render() {
     return (
@@ -106,10 +128,10 @@ export default class Messenger extends Component {
           <ConversationList
             conversations={this.state.chapters[this.state.actualChapter].conversations}
             clicked={this.changeConversation}
-            changeChapter = {this.changeChapter}
+            changeChapter={this.changeChapter}
+            availableChaptersList={this.getAvailableChaptersNames()}
           />
         </div>
-
         <div className="scrollable content">
           <MessageList
             convName={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].name + " - " + this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].title}
