@@ -128,7 +128,6 @@ export default class Messenger extends Component {
   }
 
   finishChapter = () => {
-    console.log("finishing");
     let chapters = [...this.state.chapters];
     let actualChapter = chapters[this.state.actualChapter];
     if (actualChapter.finished === false) {

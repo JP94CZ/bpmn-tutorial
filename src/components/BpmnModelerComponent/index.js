@@ -42,8 +42,7 @@ export default class BpmnModelerComponent extends Component {
     }
 
     checkModel() {
-        let elementRegistry = this.modeler.get('elementRegistry');
-        if(this.checkSubmittedProcess(elementRegistry)){
+        if(this.checkSubmittedProcess( )){
             this.setState({doneCorrectly: true});
         }
     }
@@ -176,6 +175,7 @@ export default class BpmnModelerComponent extends Component {
             while (y < process[i].elements.length) {
                 let element = elementRegistry.get(process[i].elements[y].id);
                 if (!this.checkIfIsInSwimlane(element, swimlane)) {
+                    this.setBarTextAndAlertType("Following element is misplaced: "+ element.id, this.alertClasses.warning)
                     return false;
                 }
                 y++;
@@ -268,7 +268,9 @@ export default class BpmnModelerComponent extends Component {
         let amountOfLegitElements = elements.length - this.countAllSequenceFlows(elementRegistry) - this.countAllLabelObjects(elementRegistry) - this.extraElements;
         if (expectedElements !== amountOfLegitElements) {
             this.setBarTextAndAlertType("There are extra elements in the process! Delete them or hit reset to start over!", this.alertClasses.warning);
+            return false;
         }
+        return true;
     }
 
     render = () => {
