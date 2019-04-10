@@ -25,18 +25,18 @@
 		{
 			"message": "TEXT REPLY 3",
 			"id": 3,
-			"followingId": false
+			"followingId": null
 		},
 		{
 			"message": "TEXT REPLY 4",
 			"id": 4,
-			"followingId": true
+			"followingId": null
 		},
 		{
 			"replies":[
 				{
 					"message": "ODPOVED 1",
-					"followingId": 3
+					"followingId": false
 				},
 				{
 					"message": "ODPOVED 2",
@@ -44,14 +44,14 @@
 				},
 				{
 					"message": "ODPOVED 3",
-					"followingId": 5
+					"followingId": false
 				}
 			]
 		},
 		{
 			"message": "TEXT REPLY 4",
 			"id": 4,
-			"followingId": true
+			"followingId": false
 		}
 	],
 	"tomasMalinkovic": [
@@ -91,7 +91,7 @@
 			"replies":[
 				{
 					"message": "ODPOVED 1",
-					"followingId": 3
+					"followingId": false
 				},
 				{
 					"message": "ODPOVED 2",
@@ -99,14 +99,14 @@
 				},
 				{
 					"message": "ODPOVED 3",
-					"followingId": 5
+					"followingId": false
 				}
 			]
 		},
 		{
 			"message": "TEXT REPLY 4",
 			"id": 4,
-			"followingId": true
+			"followingId": false
 		}
 	],
 	"janKoci": [

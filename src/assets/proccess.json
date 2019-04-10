@@ -1,0 +1,51 @@
+[
+    {
+        "lane": "Lane_0m2ndut",
+        "elements": [
+            {
+                "id": "StartEvent_1gbuuz4",
+                "connections": [
+                    "Task_1h0yrnv"
+                ]
+            },
+            {
+                "id": "Task_1h0yrnv",
+                "connections": [
+                    "ExclusiveGateway_0fa8mw8"
+                ]
+            },
+            {
+                "id": "ExclusiveGateway_0fa8mw8",
+                "connections": [
+                    "Task_1g2dvvy","Task_1fntjqy"
+                ]
+            },
+            {
+                "id": "Task_1fntjqy",
+                "connections": [
+                    "EndEvent_10zfjdi"
+                ]
+            },
+            {
+                "id": "EndEvent_10zfjdi",
+                "connections": null
+            }
+        ]
+    },
+    {
+        "lane": "Lane_1xeo2x9",
+        "elements": [
+            {
+                "id": "Task_1g2dvvy",
+                "connections": [
+                    "EndEvent_05pa5u4"
+                ]
+            },
+            {
+                "id": "EndEvent_05pa5u4",
+                "connections": null
+                
+            }
+        ]
+    }
+]

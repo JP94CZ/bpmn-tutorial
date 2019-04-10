@@ -30,6 +30,7 @@ export default class MessageList extends Component {
     let repliesMade = this.props.conversationProgress.length;
     let followingMessage = null;
 
+    //null for going to the next replies, followingId for getting to the next message, false for ending the conversation
     while (i < messageCount) {
       let current = dialogue[this.props.convDataSource][i];
       if ("undefined" === typeof (current["replies"])) {
@@ -42,6 +43,10 @@ export default class MessageList extends Component {
             />
           );
           followingMessage = current.followingId;
+          if(followingMessage === false){
+            this.props.endConversation();
+              break;
+          }
         }
 
       } else {
@@ -56,16 +61,21 @@ export default class MessageList extends Component {
           );
           currentReplies++;
           followingMessage = activeReply.followingId;
+
+          if(followingMessage === false){
+            this.props.endConversation();
+              break;
+          }
         }
         else {
           messages.push(<ReplyHolder
             replies = {current.replies}
             clicked={this.props.reply} />);
-          //tady budu renderovat policka s odpovedmi
+          
           break;
         }
       }
-      i += 1;
+      i++;
     }
     return messages;
   }
