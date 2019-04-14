@@ -3,11 +3,6 @@ import ConversationList from '../ConversationList';
 import MessageList from '../MessageList/';
 import BpmnModelerComponent from '../BpmnModelerComponent/';
 import './Messenger.css';
-import naplava from '../../assets/pictures/pavel_naplava.png';
-import zoubek from '../../assets/pictures/lukas_zoubek.jpg';
-import koci from '../../assets/pictures/jan_koci.jpg';
-import gorecki from '../../assets/pictures/ales_gorecki.jpg';
-import malinkovic from '../../assets/pictures/tomas-malinkovic2.png';
 import {initialState} from '../../assets/initialState.js';
 
 export default class Messenger extends Component {
@@ -60,6 +55,15 @@ export default class Messenger extends Component {
     }
   }
 
+  restartConversation = () => {
+    let conversations = [...this.state.chapters[this.state.actualChapter].conversations];
+    let actualConversation = conversations[this.state.actualConversation];
+    actualConversation.conversationProgress = [];
+      actualConversation.finished = true;
+      this.setState(conversations)
+
+  }
+
   drawingAvailable = () => {
     let conversations = [...this.state.chapters[this.state.actualChapter].conversations];
     let i = 0;
@@ -84,6 +88,7 @@ export default class Messenger extends Component {
     let convWindow = null;
     if (this.state.displayDraw === true) {  
       convWindow = <BpmnModelerComponent
+      process = {this.state.chapters[this.state.actualChapter].process}
         finishChapter={() => this.finishChapter()}
       />;
     } else {
@@ -92,7 +97,8 @@ export default class Messenger extends Component {
         convDataSource={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].conversation}
         conversationProgress={this.state.chapters[this.state.actualChapter].conversations[this.state.actualConversation].conversationProgress}
         reply={this.progressConversation}
-        endConversation={this.endConversation} />
+        endConversation={this.endConversation} 
+        restartConversation={() => this.restartConversation()}/>
     }
 
     return (

@@ -6,9 +6,15 @@
   font-weight: 500;
   border-bottom: 1px solid #eeeef1;
 
-  position: sticky;
   top: 0px;
 }
+
+.buttonLast {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 
 @supports (backdrop-filter: blur(20px)) {
   .toolbar {
@@ -22,6 +28,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 800;
+  width: 85%
 }
 
 

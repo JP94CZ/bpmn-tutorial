@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 import 'bpmn-js/dist/assets/diagram-js.css';
 import 'bpmn-font/dist/css/bpmn-embedded.css';
-import { emptyBpmn } from '../../assets/empty.bpmn';
 import BpmnModelerBar from '../BpmnModelerBar';
 import process from '../../assets/proccess.json';
 
@@ -57,7 +56,7 @@ export default class BpmnModelerComponent extends Component {
 
 
     newBpmnDiagram = () => {
-        this.openBpmnDiagram(emptyBpmn);
+        this.openBpmnDiagram(this.props.process);
     }
 
     openBpmnDiagram = (xml) => {

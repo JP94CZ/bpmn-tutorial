@@ -146,7 +146,7 @@
 			"replies":[
 				{
 					"message": "ODPOVED 1",
-					"followingId": 3
+					"followingId": 4
 				},
 				{
 					"message": "ODPOVED 2",
@@ -154,14 +154,14 @@
 				},
 				{
 					"message": "ODPOVED 3",
-					"followingId": 5
+					"followingId": 4
 				}
 			]
 		},
 		{
 			"message": "TEXT REPLY 4",
 			"id": 4,
-			"followingId": true
+			"followingId": false
 		}
 	],
 	"lukasZoubek": [

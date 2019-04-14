@@ -3,12 +3,14 @@ import zoubek from './pictures/lukas_zoubek.jpg';
 import koci from './pictures/jan_koci.jpg';
 import gorecki from './pictures/ales_gorecki.jpg';
 import malinkovic from './pictures/tomas-malinkovic2.png';
+import { emptyBpmn } from './empty.bpmn';
 
 export const initialState = {
     chapters: [
       {
         name: 'Tutorial',
         finished: false,
+        process: emptyBpmn,
         conversations: [
           {
             photo: naplava,

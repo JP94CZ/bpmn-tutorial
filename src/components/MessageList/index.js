@@ -85,6 +85,7 @@ export default class MessageList extends Component {
       <div className="message-list">
         <Toolbar
           convName={this.props.convName}
+          restartConversation={this.props.restartConversation}
         />
 
         <div className="message-list-container">{this.renderMessages()}</div>
