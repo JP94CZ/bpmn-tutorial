@@ -4,30 +4,35 @@
         "elements": [
             {
                 "id": "StartEvent_1gbuuz4",
+                "label": "start event 1",
                 "connections": [
                     "Task_1h0yrnv"
                 ]
             },
             {
                 "id": "Task_1h0yrnv",
+                "label": "activity 1",
                 "connections": [
                     "ExclusiveGateway_0fa8mw8"
                 ]
             },
             {
                 "id": "ExclusiveGateway_0fa8mw8",
+                "label": "exclusive gateway 3",
                 "connections": [
                     "Task_1g2dvvy","Task_1fntjqy"
                 ]
             },
             {
                 "id": "Task_1fntjqy",
+                "label": "activity 2",
                 "connections": [
                     "EndEvent_10zfjdi"
                 ]
             },
             {
                 "id": "EndEvent_10zfjdi",
+                "label": "end event 5",
                 "connections": null
             }
         ]
@@ -37,12 +42,14 @@
         "elements": [
             {
                 "id": "Task_1g2dvvy",
+                "label": "activity 3",
                 "connections": [
                     "EndEvent_05pa5u4"
                 ]
             },
             {
                 "id": "EndEvent_05pa5u4",
+                "label": "end event 7",
                 "connections": null
                 
             }

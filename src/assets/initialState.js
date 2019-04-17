@@ -1,35 +1,22 @@
-import naplava from './pictures/pavel_naplava.png';
-import zoubek from './pictures/lukas_zoubek.jpg';
-import koci from './pictures/jan_koci.jpg';
-import gorecki from './pictures/ales_gorecki.jpg';
-import malinkovic from './pictures/tomas-malinkovic2.png';
-import { emptyBpmn } from './empty.bpmn';
+import { tutorial } from './tutorial.bpmn';
+import polan from './pictures/jan_polan.jpg';
+import bachmaier from './pictures/karel_bachmaier.jpg';
 
 export const initialState = {
     chapters: [
       {
         name: 'Tutorial',
         finished: false,
-        process: emptyBpmn,
+        process: tutorial,
         conversations: [
           {
-            photo: naplava,
-            name: 'Pavel Náplava',
-            title: 'BPMN Master',
-            conversation: "pavelNaplava",
+            photo: polan,
+            name: 'Jan Polan',
+            title: 'Memelord',
+            conversation: "janPolan-tutorial",
             id: 0,
             conversationProgress: [],
             conversationFinalLength: null,
-            finished: false
-          },
-          {
-            photo: malinkovic,
-            name: `Tomáš Malinkovič`,
-            title: 'BPM Chief',
-            conversation: "tomasMalinkovic",
-            id: 1,
-            conversationProgress: [],
-
             finished: false
           }
         ]
@@ -37,15 +24,26 @@ export const initialState = {
       {
         name: 'Chapter 1',
         finished: false,
+        process: tutorial,
         conversations: [
-
           {
-            photo: koci,
-            name: `Jan Kočí`,
-            title: 'Big Boss',
-            conversation: "janKoci",
+            photo: polan,
+            name: 'Jan Polan',
+            title: 'Memelord',
+            conversation: "janPolan-chapterOne",
             id: 0,
             conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: bachmaier,
+            name: 'Charlie Doughnut',
+            title: 'HR background',
+            conversation: "charlieDoughnut",
+            id: 1,
+            conversationProgress: [],
+            conversationFinalLength: null,
             finished: false
           }
         ]
@@ -53,32 +51,17 @@ export const initialState = {
       {
         name: 'Chapter 2',
         finished: false,
+        process: tutorial,
         conversations: [
 
-          {
-            photo: zoubek,
-            name: `Lukáš Zoubek`,
-            title: 'Lil\' Boss',
-            conversation: "lukasZoubek",
-            id: 0,
-            conversationProgress: [],
-            finished: false
-          }
         ]
       },
       {
         name: 'Chapter 3',
         finished: false,
+        process: tutorial,
         conversations: [
-          {
-            photo: gorecki,
-            name: `Aleš Górecki`,
-            title: 'Moodle Captain',
-            conversation: "alesGorecki",
-            id: 0,
-            conversationProgress: [],
-            finished: false
-          }
+          
         ]
       }
     ]

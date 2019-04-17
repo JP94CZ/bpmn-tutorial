@@ -1,29 +1,29 @@
-export const emptyBpmn = `<?xml version="1.0" encoding="UTF-8"?>
+export const tutorial = `<?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1jvkj98" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="3.2.1">
   <bpmn:collaboration id="Collaboration_068xg5q">
     <bpmn:participant id="Participant_1v7kyai" processRef="Process_1k83mb9" />
   </bpmn:collaboration>
   <bpmn:process id="Process_1k83mb9" isExecutable="false">
     <bpmn:laneSet id="LaneSet_0knex5f">
-      <bpmn:lane id="Lane_0m2ndut" name="Pool 1">
+      <bpmn:lane id="Lane_0m2ndut" name="A">
         <bpmn:flowNodeRef>ExclusiveGateway_0fa8mw8</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_05pa5u4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_10zfjdi</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>StartEvent_1gbuuz4</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_1xeo2x9" name="Pool 2">
+      <bpmn:lane id="Lane_1xeo2x9" name="B">
         <bpmn:flowNodeRef>Task_1fntjqy</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1g2dvvy</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1h0yrnv</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:task id="Task_1fntjqy" name="Aktivita 2" />
-    <bpmn:task id="Task_1g2dvvy" name="Aktivita 3" />
-    <bpmn:task id="Task_1h0yrnv" name="Aktivita 1" />
-    <bpmn:exclusiveGateway id="ExclusiveGateway_0fa8mw8" name="Rozhodnutí" />
-    <bpmn:endEvent id="EndEvent_05pa5u4" name="End" />
-    <bpmn:endEvent id="EndEvent_10zfjdi" name="Konec" />
-    <bpmn:startEvent id="StartEvent_1gbuuz4" name="Start" />
+    <bpmn:task id="Task_1fntjqy" name="Activity 2" />
+    <bpmn:task id="Task_1g2dvvy" name="Activity 3" />
+    <bpmn:task id="Task_1h0yrnv" name="Activity 1" />
+    <bpmn:exclusiveGateway id="ExclusiveGateway_0fa8mw8" name="3" />
+    <bpmn:endEvent id="EndEvent_05pa5u4" name="7" />
+    <bpmn:endEvent id="EndEvent_10zfjdi" name="5" />
+    <bpmn:startEvent id="StartEvent_1gbuuz4" name="1" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_068xg5q">

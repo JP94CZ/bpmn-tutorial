@@ -1,277 +1,314 @@
 {
-	"pavelNaplava": [
+	"janPolan-tutorial": [
 		{
-			"message": "Hello! I'm Pavel Náplava from CZM!",
+			"message": "Hello there! My name is Jan and yeah, I made this app. The purpose of it (besides me graduating) is to help you in getting your feet wet with process analysis and BPMN.",
 			"id": 1,
 			"followingId": 2
 		},
 		{
-			"message": "Hello Pavel, what's up with you?",
+			"message": "I think you're probably here because you enrolled in a course focused on process management. Am I right?",
 			"id": 2,
 			"followingId": null
 		},
 		{
 			"replies":[
 				{
-					"message": "ODPOVED 1",
+					"message": "Yeah, you nailed it.",
 					"followingId": 3
 				},
 				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 3",
-			"id": 3,
-			"followingId": null
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": null
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": false
-				},
-				{
-					"message": "ODPOVED 2",
+					"message": "Nope, but I wanted to educate myself at this topic and found this app.",
 					"followingId": 4
 				},
 				{
-					"message": "ODPOVED 3",
-					"followingId": false
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": false
-		}
-	],
-	"tomasMalinkovic": [
-		{
-			"message": "Hello! I'm Pavel Náplava from CZM!",
-			"id": 1,
-			"followingId": 2
-		},
-		{
-			"message": "Hello Pavel, what's up with you?",
-			"id": 2,
-			"followingId": null
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": 3
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 3",
-			"id": 3,
-			"followingId": false
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": true
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": false
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				},
-				{
-					"message": "ODPOVED 3",
-					"followingId": false
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": false
-		}
-	],
-	"janKoci": [
-		{
-			"message": "Hello! I'm Pavel Náplava from CZM!",
-			"id": 1,
-			"followingId": 2
-		},
-		{
-			"message": "Hello Pavel, what's up with you?",
-			"id": 2,
-			"followingId": null
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": 3
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 3",
-			"id": 3,
-			"followingId": false
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": true
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": 4
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				},
-				{
-					"message": "ODPOVED 3",
-					"followingId": 4
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": false
-		}
-	],
-	"lukasZoubek": [
-		{
-			"message": "Hello! I'm Pavel Náplava from CZM!",
-			"id": 1,
-			"followingId": 2
-		},
-		{
-			"message": "Hello Pavel, what's up with you?",
-			"id": 2,
-			"followingId": null
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": 3
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				}
-			]
-		},
-		{
-			"message": "TEXT REPLY 3",
-			"id": 3,
-			"followingId": false
-		},
-		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": true
-		},
-		{
-			"replies":[
-				{
-					"message": "ODPOVED 1",
-					"followingId": 3
-				},
-				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				},
-				{
-					"message": "ODPOVED 3",
+					"message": "Nah, I'm here by accident and I'm about to leave right now.",
 					"followingId": 5
 				}
 			]
 		},
 		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": true
-		}
-	],
-	"alesGorecki": [
-		{
-			"message": "Hello! I'm Pavel Náplava from CZM!",
-			"id": 1,
-			"followingId": 2
+			"message": "I knew it right from the moment I saw you!",
+			"id": 3,
+			"followingId": 6
 		},
 		{
-			"message": "Hello Pavel, what's up with you?",
-			"id": 2,
+			"message": "Wow, that's really cool. I appreciate it!",
+			"id": 4,
+			"followingId": 6
+		},
+		{
+			"message": "Really? Don't you want to give it at least a shot?",
+			"id": 5,
+			"followingId": 6
+		},
+		{
+			"message": "Anyway, I'm going to tell you how this app works. Your goal will be to map a few process using the BPMN notation. Have you ever heard about it?",
+			"id": 6,
 			"followingId": null
 		},
 		{
 			"replies":[
 				{
-					"message": "ODPOVED 1",
-					"followingId": 3
+					"message": "Yes, I already know how the notation works and have experience using it.",
+					"followingId": 7
 				},
 				{
-					"message": "ODPOVED 2",
-					"followingId": 4
+					"message": "I sort of know but I could use a refreshment.",
+					"followingId": 8
+				},
+				{
+					"message": "What the hell are you talking about?",
+					"followingId": 8
 				}
 			]
 		},
 		{
-			"message": "TEXT REPLY 3",
-			"id": 3,
-			"followingId": false
+			"message": "Allright, great!",
+			"id": 7,
+			"followingId": 9
 		},
 		{
-			"message": "TEXT REPLY 4",
-			"id": 4,
-			"followingId": true
+			"message": "No problem, here are few sources you might find useful in your journey. Read through them and then we can continue ;)",
+			"id": 8,
+			"followingId": 9
+		},
+		{
+			"message": "Using dialogues just like this one you will get informations about a process from several people, all of whom have a partial informations about it.",
+			"id": 9,
+			"followingId": 10
+		},
+		{
+			"message": "Your goal will be putting all of them together and draw the process using a drawing tool I imported from bpmn.io, so all credit for that goes to them.",
+			"id": 10,
+			"followingId": 11
+		},
+		{
+			"message": "What you see on your left is the conversation window. At the top of it is a chapter selection. Right now there is only the \"Tutorial\" option, because you havent unlocked any other chapters.",
+			"id": 11,
+			"followingId": 12
+		},
+		{
+			"message": "You can switch between different chapters using this selection.",
+			"id": 12,
+			"followingId": 13
+		},
+		{
+			"message": "Next important thig is the conversations window. If you've ever used Messenger you'll feel really familiar :) Basically by clicking on it you switch between the conversations and can go throught them.",
+			"id": 13,
+			"followingId": null
 		},
 		{
 			"replies":[
 				{
-					"message": "ODPOVED 1",
-					"followingId": 3
+					"message": "Thank you, Captain Obvious!",
+					"followingId": 14
 				},
 				{
-					"message": "ODPOVED 2",
-					"followingId": 4
-				},
-				{
-					"message": "ODPOVED 3",
-					"followingId": 5
+					"message": "That looks easy enough.",
+					"followingId": 15
 				}
 			]
 		},
 		{
-			"message": "TEXT REPLY 4",
+			"message": "You're welcome Lieutenant Sarcasm!",
+			"id": 14,
+			"followingId": 16
+		},
+		{
+			"message": "I hoped it would.",
+			"id": 15,
+			"followingId": 16
+		},
+		{
+			"message": "Anyway, once you go through all the conversations a new option will appear in the conversation options called \"Draw the process\"",
+			"id": 16,
+			"followingId": 17
+		},
+		{
+			"message": "When you click this you'll get the premade process with all activities, gateways, swimming lanes etc. in the bpmn.io tool. You job will be to connect them correctly together and put them into the correct lanes.",
+			"id": 17,
+			"followingId": 18
+		},
+		{
+			"message": "Whatever you do, do not try to add or remove any elements. If you add an element you will have to delete it but if you remove one, you will have to start over again.",
+			"id": 18,
+			"followingId": 19
+		},
+		{
+			"message": "If that happens or you'll get really lost in the drawing and decide to start over. There will be a Reset button in the toolbar. You can use that, I put it there for you.",
+			"id": 19,
+			"followingId": 20
+		},
+		{
+			"message": "If you were right you'll be able to unlock a new chapter, if you were not there will be a helpful advice there to help you out.",
+			"id": 20,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "Allright! I'm ready, let's get to it!",
+					"followingId": 21
+				},
+				{
+					"message": "Thanks, so what now?",
+					"followingId": 22
+				}
+			]
+		},
+		{
+			"message": "That's the spirit!",
+			"id": 21,
+			"followingId": 23
+		},
+		{
+			"message": "Now you'll try the tool!",
+			"id": 22,
+			"followingId": 23
+		},
+		{
+			"message": "Just try to connect the elements like this: 1 (starting event) - Activity 1 - 3 (exclusive gateway). From this gateway connect the Activity 2 and from here 5 (end). All of these will be in the swimming lane A.",
+			"id": 23,
+			"followingId": 24
+		},
+		{
+			"message": "Also from the exclusive gateway connect the Activity 3 to 7(end). These two belong into the B swimming lane.",
+			"id": 24,
+			"followingId": 26
+		},
+		{
+			"message": "I'll use my awesome super powers to summon the drawing window into the conversations window right now! Here we go!",
+			"id": 26,
+			"followingId": 27
+		},
+		{
+			"message": "PRESTO MAJESTO!",
+			"id": 27,
+			"followingId": 28
+		},
+		{
+			"message": "Bam! There we go!",
+			"id": 28,
+			"followingId": 29
+		},
+		{
+			"message": "Three more things I need to mention real quick. 1) If you refresh the webpage you loose all the progress and there is currently no way to save it",
+			"id": 29,
+			"followingId": 30
+		},
+		{
+			"message": "2) If you want to start a conversation again and pick different options, you can hit the Restart conversation button in the toolbar up top.",
+			"id": 30,
+			"followingId": 31
+		},
+		{
+			"message": "3) When you are at the drawing tool, go to another conversation and return back, the process drawn so far will be lost and you'll have to start over. Write the info down somewhere before you draw!",
+			"id": 31,
+			"followingId": 32
+		},
+		{
+			"message": "Allright, go for it, make me proud!",
+			"id": 32,
+			"followingId": false
+		}
+	],
+	"janPolan-chapterOne": [
+		{
+			"message": "Hello again! I'm glad to see you made it through the tutorial to the first chapter!",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "Now the real thing starts. Imagine a following scenario:",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "Your boss wants to see how your company hires new programmers and he wants YOU to make him a process schema.",
+			"id": 3,
+			"followingId": 4
+		},
+		{
+			"message": "He gives you a list of people who are involved in this process and now you are on your own.",
 			"id": 4,
-			"followingId": true
+			"followingId": 5
+		},
+		{
+			"message": "Good luck!",
+			"id": 5,
+			"followingId": false
+		}
+	],
+	"charlieDoughnut": [
+		{
+			"message": "Oh, hello, are you the guy who is mapping the programmers hiring process?",
+			"id": 1,
+			"followingId": null
+		},
+		{
+			"replies":[
+				{
+					"message": "Yes, thats me!",
+					"followingId": 2
+				},
+				{
+					"message": "No, I just came to disturb you.",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "Then you succeded, now turn around and get out.",
+			"id": 3,
+			"followingId": 4
+		},
+		{
+			"message": "(He won't talk to you anymore, you should restart to conversation if you need information from him!)",
+			"id": 4,
+			"followingId": false
+		},
+		{
+			"message": "Great, I was told you were coming. Look, I don't really have much time so I already prepared everything you might need to know.",
+			"id": 2,
+			"followingId": 5
+		},
+		{
+			"message": "Okay, my name is Charlie Doughnut. Don't laugh. I'm working as a backoffice HR support, so I handle all of the neccessary checks.",
+			"id": 5,
+			"followingId": 6
+		},
+		{
+			"message": "When the boss sends me the adepts for hiring I am the one who takes look at their history and status. First I do the background check, you know, if people don't lie about their diplomas, bad reputation etc.",
+			"id": 6,
+			"followingId": 7
+		},
+		{
+			"message": "Next I do the credit check. I know this is not a nice thing to do but we are dealing with a lot of data which someone desperate might want to steal.",
+			"id": 7,
+			"followingId": 8
+		},
+		{
+			"message": "Last thing I do is the reference check. I call all the contacts in the CV and see whether it was made up or not.",
+			"id": 8,
+			"followingId": 9
+		},
+		{
+			"message": "If everything looks good I give a \"approved\" rating into the system and thats it for me!",
+			"id": 9,
+			"followingId": 10
+		},
+		{
+			"replies":[
+				{
+					"message": "Thanks, you've been super helpful!",
+					"followingId": 10
+				}
+			]
+		},
+		{
+			"message": "No problem, thats really all I can tell you, so if you wouldnt mind I need to get back to my work.",
+			"id": 10,
+			"followingId": false
 		}
 	]
 }

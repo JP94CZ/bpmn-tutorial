@@ -20,7 +20,7 @@ export default class BpmnModelerComponent extends Component {
 
     originalBarText = 'Try to connect these elements to finish the process! Do not delete any of the present elements!';
     
-    successText = 'You did it right! Unlock the next chapter by clicking the button on the right!';
+    successText = 'Good! Unlock new chapter by clicking the button on the right and continue via chapter options!';
 
     state = {
         barText: this.originalBarText,
@@ -132,7 +132,7 @@ export default class BpmnModelerComponent extends Component {
                         if (result !== -1) {
                             sequenceFlows.splice(result, 1);
                         } else {
-                            this.setBarTextAndAlertType("There are connections missing from " + lane.elements[z].id, this.alertClasses.warning)
+                            this.setBarTextAndAlertType("There are connections missing from " + lane.elements[z].label, this.alertClasses.warning)
                             return false;
                         }
                         u++
@@ -174,7 +174,7 @@ export default class BpmnModelerComponent extends Component {
             while (y < process[i].elements.length) {
                 let element = elementRegistry.get(process[i].elements[y].id);
                 if (!this.checkIfIsInSwimlane(element, swimlane)) {
-                    this.setBarTextAndAlertType("Following element is misplaced: "+ element.id, this.alertClasses.warning)
+                    this.setBarTextAndAlertType("Following element is misplaced: "+ element.label, this.alertClasses.warning)
                     return false;
                 }
                 y++;
