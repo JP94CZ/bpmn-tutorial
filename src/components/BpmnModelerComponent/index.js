@@ -3,13 +3,14 @@ import BpmnModeler from 'bpmn-js/lib/Modeler';
 import 'bpmn-js/dist/assets/diagram-js.css';
 import 'bpmn-font/dist/css/bpmn-embedded.css';
 import BpmnModelerBar from '../BpmnModelerBar';
-import process from '../../assets/proccess.json';
 
 export default class BpmnModelerComponent extends Component {
 
     modeler = null;
 
     extraElements = 2;
+
+    process = this.props.processSolution;
 
     alertClasses = {
         primary: 'primary',
@@ -121,9 +122,9 @@ export default class BpmnModelerComponent extends Component {
     checkConnections = (elementRegistry) => {
         let sequenceFlows = this.getAllSequenceFlows(elementRegistry);
         let i = 0;
-        while (i < process.length) {
+        while (i < this.process.length) {
             let z = 0;
-            let lane = process[i];
+            let lane = this.process[i];
             while (z < lane.elements.length) {
                 if (lane.elements[z].connections !== null) {
                     let u = 0;
@@ -168,13 +169,13 @@ export default class BpmnModelerComponent extends Component {
 
     checkAccordingPlacement = (elementRegistry) => {
         let i = 0;
-        while (i < process.length) {
-            let swimlane = elementRegistry.get(process[i].lane);
+        while (i < this.process.length) {
+            let swimlane = elementRegistry.get(this.process[i].lane);
             let y = 0;
-            while (y < process[i].elements.length) {
-                let element = elementRegistry.get(process[i].elements[y].id);
+            while (y < this.process[i].elements.length) {
+                let element = elementRegistry.get(this.process[i].elements[y].id);
                 if (!this.checkIfIsInSwimlane(element, swimlane)) {
-                    this.setBarTextAndAlertType("Following element is misplaced: "+ element.label, this.alertClasses.warning)
+                    this.setBarTextAndAlertType("Following element is misplaced: "+ this.process[i].elements[y].label, this.alertClasses.warning)
                     return false;
                 }
                 y++;
@@ -239,10 +240,10 @@ export default class BpmnModelerComponent extends Component {
     }
 
     countAllProcessElements() {
-        let result = process.length;
+        let result = this.process.length;
         let i = 0;
-        while (i < process.length) {
-            result += process[i].elements.length;
+        while (i < this.process.length) {
+            result += this.process[i].elements.length;
             i++;
         }
         return result;

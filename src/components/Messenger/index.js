@@ -89,6 +89,7 @@ export default class Messenger extends Component {
     if (this.state.displayDraw === true) {  
       convWindow = <BpmnModelerComponent
       process = {this.state.chapters[this.state.actualChapter].process}
+      processSolution = {this.state.chapters[this.state.actualChapter].processSolution}
         finishChapter={() => this.finishChapter()}
       />;
     } else {

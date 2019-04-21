@@ -1,6 +1,7 @@
 import { tutorial } from './tutorial.bpmn';
 import polan from './pictures/jan_polan.jpg';
 import bachmaier from './pictures/karel_bachmaier.jpg';
+import process from './proccess.json';
 
 export const initialState = {
     chapters: [
@@ -8,11 +9,12 @@ export const initialState = {
         name: 'Tutorial',
         finished: false,
         process: tutorial,
+        processSolution: process.tutorial,
         conversations: [
           {
             photo: polan,
             name: 'Jan Polan',
-            title: 'Memelord',
+            title: 'Creator',
             conversation: "janPolan-tutorial",
             id: 0,
             conversationProgress: [],
@@ -29,7 +31,7 @@ export const initialState = {
           {
             photo: polan,
             name: 'Jan Polan',
-            title: 'Memelord',
+            title: 'Creator',
             conversation: "janPolan-chapterOne",
             id: 0,
             conversationProgress: [],
