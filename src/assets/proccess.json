@@ -56,5 +56,267 @@
                 }
             ]
         }
+    ],
+    "hiringProcess": [
+        {
+            "lane": "Lane_131y2rq",
+            "elements": [
+                {
+                    "id": "StartEvent_0y74yxx",
+                    "label": "Hiring request accepted",
+                    "connections": [
+                        "Task_0hdypsa"
+                    ]
+                },
+                {
+                    "id": "Task_0hdypsa",
+                    "label": "Job offer publication",
+                    "connections": [
+                        "Task_0m70ln9"
+                    ]
+                },
+                {
+                    "id": "Task_0h20s9y",
+                    "label": "Holding interviews",
+                    "connections": [
+                        "Task_1d4oouv"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_199oqez",
+                    "label": "Applicant chosen?",
+                    "connections": [
+                        "Task_0wscrok",
+                        "Task_1tg544g"
+                    ]
+                },
+                {
+                    "id": "Task_1d4oouv",
+                    "label": "Making the decision",
+                    "connections": [
+                        "ExclusiveGateway_199oqez"
+                    ]
+                },
+                {
+                    "id": "Task_0ivtcw6",
+                    "label": "Contacting applicant",
+                    "connections": [
+                        "ExclusiveGateway_10sa5y8"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_10sa5y8",
+                    "label": "Applicant still interested?",
+                    "connections": [
+                        "Task_1tg544g",
+                        "Task_0gcdf6o"
+                    ]
+                }
+            ]
+        },
+        {
+            "lane": "Lane_0ivcctl",
+            "elements": [
+                {
+                    "id": "Task_0wscrok",
+                    "label": "Background check",
+                    "connections": [
+                        "Task_03a8jnf"
+                    ]
+                },
+                {
+                    "id": "Task_03a8jnf",
+                    "label": "Credit check",
+                    "connections": [
+                        "Task_1uuegz7"
+                    ]
+                },
+                {
+                    "id": "Task_1uuegz7",
+                    "label": "Reference check",
+                    "connections": [
+                        "ExclusiveGateway_04es42d"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_04es42d",
+                    "label": "Everything ok?",
+                    "connections": [
+                        "Task_1tg544g",
+                        "Task_0ivtcw6"
+                    ]
+                }
+            ]
+        },
+        {
+            "lane": "Lane_00s4wnx",
+            "elements": [
+                {
+                    "id": "Task_0m70ln9",
+                    "label": "Registering applicants",
+                    "connections": [
+                        "Task_1tg544g"
+                    ]
+                },
+                {
+                    "id": "Task_1tg544g",
+                    "label": "Interview scheduling",
+                    "connections": [
+                        "Task_0h20s9y"
+                    ]
+                },
+                {
+                    "id": "EndEvent_11rmy0s",
+                    "label": "Applicant hired",
+                    "connections": null
+                },
+                {
+                    "id": "Task_0gcdf6o",
+                    "label": "Finishing paperwork",
+                    "connections": [
+                        "EndEvent_11rmy0s"
+                    ]
+                }
+            ]
+        }
+    ],
+    "clientRequest": [
+        {
+            "lane": "Lane_0m2ndut",
+            "elements": [
+                {
+                    "id": "StartEvent_1gbuuz4",
+                    "label": "start event 1",
+                    "connections": [
+                        "Task_1h0yrnv"
+                    ]
+                },
+                {
+                    "id": "Task_1h0yrnv",
+                    "label": "activity 1",
+                    "connections": [
+                        "ExclusiveGateway_0fa8mw8"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_0fa8mw8",
+                    "label": "exclusive gateway 3",
+                    "connections": [
+                        "Task_1g2dvvy",
+                        "Task_1fntjqy"
+                    ]
+                },
+                {
+                    "id": "Task_1fntjqy",
+                    "label": "activity 2",
+                    "connections": [
+                        "EndEvent_10zfjdi"
+                    ]
+                },
+                {
+                    "id": "EndEvent_10zfjdi",
+                    "label": "end event 5",
+                    "connections": null
+                }
+            ]
+        },
+        {
+            "lane": "Lane_1xeo2x9",
+            "elements": [
+                {
+                    "id": "Task_1g2dvvy",
+                    "label": "activity 3",
+                    "connections": [
+                        "EndEvent_05pa5u4"
+                    ]
+                },
+                {
+                    "id": "EndEvent_05pa5u4",
+                    "label": "end event 7",
+                    "connections": null
+                }
+            ]
+        }
+    ],
+    "rightsRequest": [
+        {
+            "lane": "Lane_00losv1",
+            "elements": [
+                {
+                    "id": "Task_090oxhi",
+                    "label": "Approving the request",
+                    "connections": [
+                        "ExclusiveGateway_1txbhaq"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_1txbhaq",
+                    "label": "Approved?",
+                    "connections": [
+                        "Task_1t0pb21",
+                        "EndEvent_117iggz"
+                    ]
+                },
+                {
+                    "id": "EndEvent_117iggz",
+                    "label": "exclusive gateway 3",
+                    "connections": null
+                }
+            ]
+        },
+        {
+            "lane": "Lane_1e5laqk",
+            "elements": [
+                {
+                    "id": "Task_0kcqv7a",
+                    "label": "Request filled",
+                    "connections": [
+                        "ExclusiveGateway_1txbhaq"
+                    ]
+                },
+                {
+                    "id": "StartEvent_0p9a2n5",
+                    "label": "Need for access",
+                    "connections": "Task_0kcqv7a"
+                }
+            ]
+        },
+        {
+            "lane": "Lane_1jojdbg",
+            "elements": [
+                {
+                    "id": "Task_1t0pb21",
+                    "label": "Checking database",
+                    "connections": [
+                        "ExclusiveGateway_0926bt5"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_0926bt5",
+                    "label": "User present in database?",
+                    "connections": [
+                        "Task_0enoqfh",
+                        "Task_1qx8qkh"
+                    ]
+                },
+                {
+                    "id": "EndEvent_0u5t4h5",
+                    "label": "Access rights distribution",
+                    "connections": null
+                },
+                {
+                    "id": "Task_1qx8qkh",
+                    "label": "Access rights distribution",
+                    "connections": ["EndEvent_0u5t4h5"]
+                },
+                {
+                    "id": "Task_0enoqfh",
+                    "label": "Adding user",
+                    "connections": [
+                        "Task_1qx8qkh"
+                    ]
+                }
+            ]
+        }
     ]
 }

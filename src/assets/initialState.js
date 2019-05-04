@@ -1,4 +1,7 @@
 import { tutorial } from './tutorial.bpmn';
+import { hiringProcess } from './hiring-process-initial.bpmn';
+import { clientRequest } from './client-request-handling-initial.bpmn';
+import { rightsRequest } from './rights-request-initial.bpmn';
 import polan from './pictures/jan_polan.jpg';
 import bachmaier from './pictures/karel_bachmaier.jpg';
 import process from './proccess.json';
@@ -26,7 +29,44 @@ export const initialState = {
       {
         name: 'Chapter 1',
         finished: false,
-        process: tutorial,
+        process: rightsRequest,
+        processSolution: process.rightsRequest,
+        conversations: [
+          {
+            photo: polan,
+            name: 'Jan Polan',
+            title: 'Creator',
+            conversation: "janPolan-chapterOne",
+            id: 0,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          }
+        ]
+      },
+      {
+        name: 'Chapter 2',
+        finished: false,
+        process: clientRequest,
+        processSolution: process.clientRequest,
+        conversations: [
+          {
+            photo: polan,
+            name: 'Jan Polan',
+            title: 'Creator',
+            conversation: "janPolan-chapterOne",
+            id: 0,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          }
+        ]
+      },
+      {
+        name: 'Chapter 3',
+        finished: false,
+        process: hiringProcess,
+        processSolution: process.hiringProcess,
         conversations: [
           {
             photo: polan,
@@ -48,22 +88,6 @@ export const initialState = {
             conversationFinalLength: null,
             finished: false
           }
-        ]
-      },
-      {
-        name: 'Chapter 2',
-        finished: false,
-        process: tutorial,
-        conversations: [
-
-        ]
-      },
-      {
-        name: 'Chapter 3',
-        finished: false,
-        process: tutorial,
-        conversations: [
-          
         ]
       }
     ]
