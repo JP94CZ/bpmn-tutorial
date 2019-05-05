@@ -8,10 +8,11 @@
 		{
 			"message": "I think you're probably here because you enrolled in a course focused on process management. Am I right?",
 			"id": 2,
-			"followingId": null
+			"followingId": 100
 		},
 		{
-			"replies":[
+			"id": 100,
+			"replies": [
 				{
 					"message": "Yeah, you nailed it.",
 					"followingId": 3
@@ -44,10 +45,11 @@
 		{
 			"message": "Anyway, I'm going to tell you how this app works. Your goal will be to map a few process using the BPMN notation. Have you ever heard about it?",
 			"id": 6,
-			"followingId": null
+			"followingId": 101
 		},
 		{
-			"replies":[
+			"id": 101,
+			"replies": [
 				{
 					"message": "Yes, I already know how the notation works and have experience using it.",
 					"followingId": 7
@@ -95,10 +97,11 @@
 		{
 			"message": "Next important thig is the conversations window. If you've ever used Messenger you'll feel really familiar :) Basically by clicking on it you switch between the conversations and can go throught them.",
 			"id": 13,
-			"followingId": null
+			"followingId": 102
 		},
 		{
-			"replies":[
+			"id": 102,
+			"replies": [
 				{
 					"message": "Thank you, Captain Obvious!",
 					"followingId": 14
@@ -142,10 +145,11 @@
 		{
 			"message": "If you were right you'll be able to unlock a new chapter, if you were not there will be a helpful advice there to help you out.",
 			"id": 20,
-			"followingId": null
+			"followingId": 103
 		},
 		{
-			"replies":[
+			"id": 103,
+			"replies": [
 				{
 					"message": "Allright! I'm ready, let's get to it!",
 					"followingId": 21
@@ -243,10 +247,11 @@
 		{
 			"message": "Oh, hello, are you the guy who is mapping the programmers hiring process?",
 			"id": 1,
-			"followingId": null
+			"followingId": 100
 		},
 		{
-			"replies":[
+			"id": 100,
+			"replies": [
 				{
 					"message": "Yes, thats me!",
 					"followingId": 2
@@ -295,10 +300,11 @@
 		{
 			"message": "If everything looks good I give a \"approved\" rating into the system and thats it for me!",
 			"id": 9,
-			"followingId": 10
+			"followingId": 101
 		},
 		{
-			"replies":[
+			"id": 101,
+			"replies": [
 				{
 					"message": "Thanks, you've been super helpful!",
 					"followingId": 10
@@ -308,6 +314,530 @@
 		{
 			"message": "No problem, thats really all I can tell you, so if you wouldnt mind I need to get back to my work.",
 			"id": 10,
+			"followingId": false
+		}
+	],
+	"martinTon": [
+		{
+			"message": "Hello",
+			"id": 0,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Hello, Michael told me you could help me. Tell me please, what happens after you get the access rights request?",
+					"followingId": 4
+				},
+				{
+					"message": "Hello, I'm mapping the rights access distribution process, could you help me?",
+					"followingId": 1
+				}
+			]
+		},
+		{
+			"message": "Hey, I have no idea what it is, but I'll try, I guess.",
+			"id": 1,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "Well I'm trying to describe how things are done around here.",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "Okay",
+			"id": 3,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Could you tell me what you do when the request for distributing the access rights reaches you?",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "Sure, I check the database if the person already has a user. If he does not, I make one for him.",
+			"id": 4,
+			"followingId": 5
+		},
+		{
+			"message": "Then I grant him the rights.",
+			"id": 5,
+			"followingId": 103
+		},
+		{
+			"id": 103,
+			"replies": [
+				{
+					"message": "And if he already has a user?",
+					"followingId": 6
+				}
+			]
+		},
+		{
+			"message": "Oh, then I grant him the rights right away.",
+			"id": 6,
+			"followingId": 104
+		},
+		{
+			"id": 104,
+			"replies": [
+				{
+					"message": "Is that all?",
+					"followingId": 7
+				}
+			]
+		},
+		{
+			"message": "Yeah, the employee automatically receives and email and request is handled.",
+			"id": 7,
+			"followingId": 105
+		},
+		{
+			"id": 105,
+			"replies": [
+				{
+					"message": "Thanks a lot.",
+					"followingId": 8
+				}
+			]
+		},
+		{
+			"message": "No problem.",
+			"id": 8,
+			"followingId": false
+		}
+	],
+	"michaelHobitphile": [
+		{
+			"message": "Hey, I'm Michael. You must be the hero who will map our processes, right?",
+			"id": 0,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Yes, that is exactly me. I've already been asked to map access rights distribution. Could you help me?",
+					"followingId": 1
+				}
+			]
+		},
+		{
+			"message": "Sure, when a developer needs some rights for access, he just fills out the form in our internal system.",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "There an automatic task is created for his manager, who either approves or denies the request.",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "If the request is denied, the whole process is over and the employee has to make the request again. This time the request should have more specific information about why it is needed.",
+			"id": 3,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "And if he approves?",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "Another task is created for the system administrator. I don't really know what he does, you should ask him.",
+			"id": 4,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "Well thank you, you were most helpful.",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "I'm glad to help.",
+			"id": 5,
+			"followingId": false
+		}
+	],
+	"lucasMullusc": [
+		{
+			"message": "Sup? Have you seen my energy drink somewhere around? I've been playing the new Mortal Kombat all night and am tottaly useless today.",
+			"id": 0,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "No, sorry. I'm mapping the request handling process and I need your help.",
+					"followingId": 1
+				},
+				{
+					"message": "Really? I've heard it's really good. Let's play a game later but right now I need your help.",
+					"followingId": 8
+				}
+			]
+		},
+		{
+			"message": "Hm, okay, what do you need from me.",
+			"id": 1,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "When you get a request from Ima, what do you do?",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "We check whether the problem is technical or not...",
+			"id": 2,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "What happens if it's not?",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "We send it back with our commentary to the client support to write why it's not.",
+			"id": 3,
+			"followingId": 103
+		},
+		{
+			"id": 103,
+			"replies": [
+				{
+					"message": "What happens when it is a technical problem?",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "We fix it.",
+			"id": 3,
+			"followingId": 103
+		},
+		{
+			"id": 103,
+			"replies": [
+				{
+					"message": "And then?",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "Test center tests whether it's fixed or not.",
+			"id": 4,
+			"followingId": 104
+		},
+		{
+			"id": 104,
+			"replies": [
+				{
+					"message": "Is that all?",
+					"followingId": 5
+				}
+			]
+		},
+		{
+			"message": "If it's not fixed they send it back. When we think it's fixed again we send it back.",
+			"id": 5,
+			"followingId": 6
+		},
+		{
+			"message": "This goes on until they are satisfied.",
+			"id": 6,
+			"followingId": 7
+		},
+		{
+			"message": "Sorry, I have stuff to do. Bye.",
+			"id": 7,
+			"followingId": false
+		},
+		{
+			"message": "Deal! You came here to map what we do after Ima or her colleagues send us the alleged bugs, right?",
+			"id": 8,
+			"followingId": 105
+		},
+		{
+			"id": 105,
+			"replies": [
+				{
+					"message": "Exactly!",
+					"followingId": 9
+				}
+			]
+		},
+		{
+			"message": "Well, first we analyze if it's really a bug. You know, sometimes the people dont't really know how to use the software correctly.",
+			"id": 9,
+			"followingId": 10
+		},
+		{
+			"message": "Then it depends. If it's not a bug we write a short commentary to Ima and she creates a response for the clients.",
+			"id": 10,
+			"followingId": 11
+		},
+		{
+			"message": "If we decide it's a bug hovewer, we have to solve it. After that it is up to the test center to test if the bug is fixed or not.",
+			"id": 11,
+			"followingId": 106
+		},
+		{
+			"id": 106,
+			"replies": [
+				{
+					"message": "Is that all you do?",
+					"followingId": 12
+				}
+			]
+		},
+		{
+			"message": "Well, if it's not fixed we have to do it again. We iterate that with the test center until they are satisfied.",
+			"id": 12,
+			"followingId": 107
+		},
+		{
+			"id": 107,
+			"replies": [
+				{
+					"message": "Thanks, I'll catch up with you later for the game!",
+					"followingId": 13
+				}
+			]
+		},
+		{
+			"message": "You bet!",
+			"id": 13,
+			"followingId": false
+		}
+	],
+	"clutterbuck": [
+		{
+			"message": "Hm?",
+			"id": 0,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Hm",
+					"followingId": 1
+				},
+				{
+					"message": "Hello, I'm mapping the client request handling process. I would need to know what happens when you are informed that the bug has been fixed.",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "...",
+			"id": 1,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "Hello, I'm mapping the client request handling process. I would need to know what happens when you are informed that the bug has been fixed.",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "We test it.",
+			"id": 2,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Thats it?",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "Yes",
+			"id": 3,
+			"followingId": 103
+		},
+		{
+			"id": 103,
+			"replies": [
+				{
+					"message": "Would it kill you if you were a little more friendly?",
+					"followingId": 4
+				},
+				{
+					"message": "What happends when the testing is done?",
+					"followingId": 7
+				}
+			]
+		},
+		{
+			"message": "I was friendly enough, considering you're wasting my time with things that I don't care about.",
+			"id": 4,
+			"followingId": 104
+		},
+		{
+			"id": 104,
+			"replies": [
+				{
+					"message": "Just help me with this and I'l be gone.",
+					"followingId": 5
+				},
+				{
+					"message": "The director wants these processes mapped and you are obliged to assist me with that.",
+					"followingId": 6
+				}
+			]
+		},
+		{
+			"message": "Okay, let's do this quick.",
+			"id": 5,
+			"followingId": 105
+		},
+		{
+			"message": "Whatever.",
+			"id": 6,
+			"followingId": 105
+		},
+		{
+			"id": 105,
+			"replies": [
+				{
+					"message": "What happends when the testing is done?",
+					"followingId": 7
+				}
+			]
+		},
+		{
+			"message": "The bug is either fixed or not. If it's not we return it to the technical support. If it is okay we close the issue and maintenance takes care of the rest.",
+			"id": 7,
+			"followingId": 107
+		},
+		{
+			"id": 107,
+			"replies": [
+				{
+					"message": "So the process ends?",
+					"followingId": 8
+				}
+			]
+		},
+		{
+			"message": "I guess.",
+			"id": 8,
+			"followingId": 107
+		},
+		{
+			"id": 107,
+			"replies": [
+				{
+					"message": "Well thank you.",
+					"followingId": 9
+				}
+			]
+		},
+		{
+			"message": "Hm....",
+			"id": 9,
+			"followingId": false
+		}
+	],
+	"ima": [
+		{
+			"message": "Hello, can I help you with something?",
+			"id": 0,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Hello, I'm here to map the client handling process.",
+					"followingId": 1
+				},
+				{
+					"message": "Hello, what can you tell me what you do when you receive a client request?",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "Okay, what do you need to know?",
+			"id": 1,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "Can you tell me what it is that you do when you receive a client request?",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "Sure, well first we take a look at the type of the request. If it's a technical problem, for example some kind of bug, we send it forward to the guys at the technical support. If it's something we can help with, we do so in a response and then we send it back!",
+			"id": 2,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Is that all you do?",
+					"followingId": 3
+				}
+			]
+		},
+		{
+			"message": "Well, sometimes the technical support decides it is not something they should be bothered with and they give us a short explanation. It is up to us then to create the response again, you know, because the technical guy aren't really good at writing usually...",
+			"id": 3,
+			"followingId": 104
+		},
+		{
+			"id": 104,
+			"replies": [
+				{
+					"message": "Thanks a lot.",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "No problem.",
+			"id": 4,
 			"followingId": false
 		}
 	]

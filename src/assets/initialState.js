@@ -4,6 +4,12 @@ import { clientRequest } from './client-request-handling-initial.bpmn';
 import { rightsRequest } from './rights-request-initial.bpmn';
 import polan from './pictures/jan_polan.jpg';
 import bachmaier from './pictures/karel_bachmaier.jpg';
+import ton from './pictures/martinTon.jpeg';
+import hobitphile from './pictures/michaelHobitphile.jpeg';
+import mollusc from './pictures/mollusc.jpeg';
+import clutterbuck from './pictures/Clutterbuck.png';
+import schwarz from './pictures/schwarz.jpeg';
+import ima from './pictures/ima.png';
 import process from './proccess.json';
 
 export const initialState = {
@@ -41,6 +47,26 @@ export const initialState = {
             conversationProgress: [],
             conversationFinalLength: null,
             finished: false
+          },
+          {
+            photo: hobitphile,
+            name: 'Michael Hobitphile',
+            title: 'Project manager',
+            conversation: "michaelHobitphile",
+            id: 1,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: ton,
+            name: 'Martin Ton',
+            title: 'System administrator',
+            conversation: "martinTon",
+            id: 2,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
           }
         ]
       },
@@ -56,6 +82,36 @@ export const initialState = {
             title: 'Creator',
             conversation: "janPolan-chapterOne",
             id: 0,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: ima,
+            name: 'Ima Kettle',
+            title: 'Client support specialist',
+            conversation: "ima",
+            id: 1,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: mollusc,
+            name: 'Lucas Mollusc',
+            title: 'Technical support leader',
+            conversation: "lucasMullusc",
+            id: 2,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: clutterbuck,
+            name: 'Phillip Clutterbuck',
+            title: 'Lead tester',
+            conversation: "clutterbuck",
+            id: 3,
             conversationProgress: [],
             conversationFinalLength: null,
             finished: false
@@ -84,6 +140,16 @@ export const initialState = {
             title: 'HR background',
             conversation: "charlieDoughnut",
             id: 1,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: schwarz,
+            name: 'Cindy Schwarz',
+            title: 'Client support assistant',
+            conversation: "lucasMullusc",
+            id: 2,
             conversationProgress: [],
             conversationFinalLength: null,
             finished: false

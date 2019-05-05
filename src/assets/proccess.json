@@ -182,40 +182,40 @@
     ],
     "clientRequest": [
         {
-            "lane": "Lane_0m2ndut",
+            "lane": "Lane_0cv53s9",
             "elements": [
                 {
-                    "id": "StartEvent_1gbuuz4",
-                    "label": "start event 1",
+                    "id": "StartEvent_08isnhu",
+                    "label": "Request received",
                     "connections": [
-                        "Task_1h0yrnv"
+                        "Task_0dygzyh"
                     ]
                 },
                 {
-                    "id": "Task_1h0yrnv",
-                    "label": "activity 1",
+                    "id": "Task_0dygzyh",
+                    "label": "Request analysis",
                     "connections": [
-                        "ExclusiveGateway_0fa8mw8"
+                        "ExclusiveGateway_09ny737"
                     ]
                 },
                 {
-                    "id": "ExclusiveGateway_0fa8mw8",
-                    "label": "exclusive gateway 3",
+                    "id": "ExclusiveGateway_09ny737",
+                    "label": "Technical support needed?",
                     "connections": [
-                        "Task_1g2dvvy",
-                        "Task_1fntjqy"
+                        "Task_1qnsc4e",
+                        "Task_16h2ihq"
                     ]
                 },
                 {
-                    "id": "Task_1fntjqy",
-                    "label": "activity 2",
+                    "id": "Task_16h2ihq",
+                    "label": "Feedback creation",
                     "connections": [
-                        "EndEvent_10zfjdi"
+                        "EndEvent_0ruc5dj"
                     ]
                 },
                 {
-                    "id": "EndEvent_10zfjdi",
-                    "label": "end event 5",
+                    "id": "EndEvent_0ruc5dj",
+                    "label": "Request handled",
                     "connections": null
                 }
             ]
@@ -224,15 +224,50 @@
             "lane": "Lane_1xeo2x9",
             "elements": [
                 {
-                    "id": "Task_1g2dvvy",
-                    "label": "activity 3",
+                    "id": "Task_1qnsc4e",
+                    "label": "Problem analysis",
                     "connections": [
-                        "EndEvent_05pa5u4"
+                        "ExclusiveGateway_00d8fba"
                     ]
                 },
                 {
-                    "id": "EndEvent_05pa5u4",
-                    "label": "end event 7",
+                    "id": "ExclusiveGateway_00d8fba",
+                    "label": "Needs solving?",
+                    "connections": [
+                        "Task_16h2ihq",
+                        "Task_0e4zap6"
+                    ]
+                },
+                {
+                    "id": "Task_0e4zap6",
+                    "label": "Bug solving",
+                    "connections": [
+                        "Task_1j403y7"
+                    ]
+                }
+            ]
+        },
+        {
+            "lane": "Lane_1xeo2x9",
+            "elements": [
+                {
+                    "id": "Task_1j403y7",
+                    "label": "Testing",
+                    "connections": [
+                        "ExclusiveGateway_12biciz"
+                    ]
+                },
+                {
+                    "id": "ExclusiveGateway_12biciz",
+                    "label": "Bug solved?",
+                    "connections": [
+                        "EndEvent_1uxmkfi",
+                        "Task_0e4zap6"
+                    ]
+                },
+                {
+                    "id": "EndEvent_1uxmkfi",
+                    "label": "Request handled",
                     "connections": null
                 }
             ]
@@ -271,7 +306,7 @@
                     "id": "Task_0kcqv7a",
                     "label": "Request filled",
                     "connections": [
-                        "ExclusiveGateway_1txbhaq"
+                        "Task_090oxhi"
                     ]
                 },
                 {

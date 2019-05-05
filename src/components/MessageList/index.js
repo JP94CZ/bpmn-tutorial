@@ -43,36 +43,38 @@ export default class MessageList extends Component {
             />
           );
           followingMessage = current.followingId;
-          if(followingMessage === false){
+          if (followingMessage === false) {
             this.props.endConversation();
-              break;
+            break;
           }
         }
 
       } else {
-        if (repliesMade > currentReplies) {
-          let activeReply = current.replies[repliesChosen[currentReplies]];
-          messages.push(
-            <Message
-              key={i}
-              isMine={true}
-              data={activeReply}
-            />
-          );
-          currentReplies++;
-          followingMessage = activeReply.followingId;
+        if (current.id === followingMessage) {
+          if (repliesMade > currentReplies) {
+            let activeReply = current.replies[repliesChosen[currentReplies]];
+            messages.push(
+              <Message
+                key={i}
+                isMine={true}
+                data={activeReply}
+              />
+            );
+            currentReplies++;
+            followingMessage = activeReply.followingId;
 
-          if(followingMessage === false){
-            this.props.endConversation();
+            if (followingMessage === false) {
+              this.props.endConversation();
               break;
+            }
           }
-        }
-        else {
-          messages.push(<ReplyHolder
-            replies = {current.replies}
-            clicked={this.props.reply} />);
-          
-          break;
+          else {
+            messages.push(<ReplyHolder
+              replies={current.replies}
+              clicked={this.props.reply} />);
+
+            break;
+          }
         }
       }
       i++;
