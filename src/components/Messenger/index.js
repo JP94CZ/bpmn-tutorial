@@ -59,7 +59,6 @@ export default class Messenger extends Component {
     let conversations = [...this.state.chapters[this.state.actualChapter].conversations];
     let actualConversation = conversations[this.state.actualConversation];
     actualConversation.conversationProgress = [];
-      actualConversation.finished = true;
       this.setState(conversations)
 
   }

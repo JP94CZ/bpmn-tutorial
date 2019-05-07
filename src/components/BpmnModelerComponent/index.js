@@ -21,7 +21,7 @@ export default class BpmnModelerComponent extends Component {
 
     originalBarText = 'Try to connect these elements to finish the process! Do not delete any of the present elements!';
     
-    successText = 'Good! Unlock new chapter by clicking the button on the right and continue via chapter options!';
+    successText = 'Good! Unlock new chapter by clicking the button on the right!';
 
     state = {
         barText: this.originalBarText,
@@ -273,6 +273,11 @@ export default class BpmnModelerComponent extends Component {
         return true;
     }
 
+    finishChapterAndSetTag = () =>{
+        this.props.finishChapter();
+        this.setBarTextAndAlertType("Chapter unlocked, proceed through the chapter menu!", this.alertClasses.success);
+    }
+
     render = () => {
         return (
             <div>
@@ -281,7 +286,7 @@ export default class BpmnModelerComponent extends Component {
                     checkModel={() => this.checkModel()}
                     barText={this.state.barText}
                     alertType={this.state.alertType}
-                    finishChapter={this.props.finishChapter} 
+                    finishChapter={this.finishChapterAndSetTag} 
                     doneCorrectly = {!this.state.doneCorrectly}/>
                 <div id="bpmncontainer">
                     <div id="bpmnview" style={{ width: '100%', height: '94vh', float: 'left' }}></div>
