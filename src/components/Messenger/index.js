@@ -72,7 +72,7 @@ export default class Messenger extends Component {
       }
       i++;
     }
-    return true;
+    return (this.state.actualChapter + 1) !== this.state.chapters.length;
   }
 
   changeChapter = (chapter) => {

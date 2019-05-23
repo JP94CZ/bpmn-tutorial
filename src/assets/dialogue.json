@@ -70,7 +70,7 @@
 			"followingId": 9
 		},
 		{
-			"message": "No problem, you can find basic info about BPMN here for example: https://camunda.com/bpmn/. Read through them and then we can continue ;)",
+			"message": "No problem, you can find basic info about BPMN here for example: https://camunda.com/bpmn/ or https://www.process.st/bpmn-tutorial/. Read through them and then we can continue ;)",
 			"id": 8,
 			"followingId": 9
 		},
@@ -166,7 +166,7 @@
 			"followingId": 23
 		},
 		{
-			"message": "Now you'll try the tool!",
+			"message": "Now you'll try the tool! You'll need to take notes somewhere.",
 			"id": 22,
 			"followingId": 23
 		},
@@ -181,17 +181,12 @@
 			"followingId": 26
 		},
 		{
-			"message": "I'll use my awesome super powers to summon the drawing window into the conversations window right now! Here we go!",
+			"message": "I'll use my powers to summon the drawing window into the conversations window right now!",
 			"id": 26,
-			"followingId": 27
-		},
-		{
-			"message": "PRESTO MAJESTO!",
-			"id": 27,
 			"followingId": 28
 		},
 		{
-			"message": "Bam! There we go!",
+			"message": "There we go!",
 			"id": 28,
 			"followingId": 29
 		},
@@ -278,7 +273,7 @@
 			"followingId": 5
 		},
 		{
-			"message": "Okay, my name is Charlie Doughnut. Don't laugh. I'm working as a backoffice HR support, so I handle all of the neccessary checks.",
+			"message": "Okay, my name is Charlie Doughnut. I'm working as a backoffice HR support, so I handle all of the neccessary checks.",
 			"id": 5,
 			"followingId": 6
 		},
@@ -327,7 +322,7 @@
 			"id": 100,
 			"replies": [
 				{
-					"message": "Hello, Michael told me you could help me. Tell me please, what happens after you get the access rights request?",
+					"message": "Hello, I was told you could help me. Tell me please, what happens after you get the access rights request?",
 					"followingId": 4
 				},
 				{
@@ -838,6 +833,258 @@
 		{
 			"message": "No problem.",
 			"id": 4,
+			"followingId": false
+		}
+	],
+	"janPolan-epilogue": [
+		{
+			"message": "Well, you've made it through the whole thing!",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "I can't stress enough how glad I'm that you've taken the time to finish this.",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "I hope you got an idea of what to expect from process mapping, if you are asked to do something like that in the future.",
+			"id": 3,
+			"followingId": 4
+		},
+		{
+			"message": "And I hope you didn't have a horrible time going through this",
+			"id": 4,
+			"followingId": 5
+		},
+		{
+			"message": "If you liked the app, hated it or just want to share some ideas for improvements - don't hesitate to contact me on janpolan@seznam.cz. I'll be happy to hear from you",
+			"id": 5,
+			"followingId": 6
+		},
+		{
+			"message": "Thanks and bye!",
+			"id": 6,
+			"followingId": false
+		}
+	],
+	"adalbertSpilka": [
+		{
+			"message": "Hello, name's Adalbert, but friends call me Bert. I'm in charge of HR here, I'm one of the managers around here.",
+			"id": 1,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Hello Bert, could you tell me what happens when there is a need for a new programmer?",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "Sure, I prepare the job offers and I publish them all over the hiring portals!",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "Cindy then takes care of the applications and scheduling, I just go to the interviews.",
+			"id": 3,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "So you go to the interviews when they are held. Then what?",
+					"followingId": 4
+				}
+			]
+		},
+		{
+			"message": "Well, it's up to me whether or not we accept the applicant.",
+			"id": 4,
+			"followingId": 5
+		},
+		{
+			"message": "It's always a hard choice, but I'm trying to asses every possibility.",
+			"id": 5,
+			"followingId": 6
+		},
+		{
+			"message": "If I decide to hire the person, background check has to be done.",
+			"id": 6,
+			"followingId": 7
+		},
+		{
+			"message": "And if I decide not to, well, Cindy has to schedule another applicant for us.",
+			"id": 7,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Is that everything you do?",
+					"followingId": 8
+				}
+			]
+		},
+		{
+			"message": "Actually, no.",
+			"id": 8,
+			"followingId": 9
+		},
+		{
+			"message": "Finally, I'm the one who contacts the applicant and offers him the job.",
+			"id": 9,
+			"followingId": 10
+		},
+		{
+			"message": "If he accepts Cindy takes care of the paperwork.",
+			"id": 10,
+			"followingId": 11
+		},
+		{
+			"message": "If he rejects us, Cindy again has to arrange another interview.",
+			"id": 11,
+			"followingId": 103
+		},
+		{
+			"id": 103,
+			"replies": [
+				{
+					"message": "Thanks a lot!",
+					"followingId": 11
+				}
+			]
+		},
+		{
+			"message": "No problem.",
+			"id": 11,
+			"followingId": false
+		}
+	],
+	"janPolan-two": [
+		{
+			"message": "Well, the first real process is already done, good job!",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "This second process will be revolving around client request solving.",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "Once again, good luck!",
+			"id": 3,
+			"followingId": false
+		}
+	],
+	"janPolan-three": [
+		{
+			"message": "Two done, one more to go!",
+			"id": 1,
+			"followingId": 2
+		},
+		{
+			"message": "This final process you'll be mapping will be a hiring process at the HR",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "You know the procedure now :)",
+			"id": 3,
+			"followingId": false
+		}
+	],
+	"cindySchwarz": [
+		{
+			"message": "Hi! ",
+			"id": 1,
+			"followingId": 100
+		},
+		{
+			"id": 100,
+			"replies": [
+				{
+					"message": "Hey Cindy, I was told you are involved in the hiring process, can you tell me how?",
+					"followingId": 2
+				}
+			]
+		},
+		{
+			"message": "Yeah, sure!",
+			"id": 2,
+			"followingId": 3
+		},
+		{
+			"message": "Well, when the bossman publishes the job offers I filter the applicants who do not match our criterias right away.",
+			"id": 3,
+			"followingId": 4
+		},
+		{
+			"message": "You know, when we say we want someone with a university degree and they don't have it, there is no point to continue.",
+			"id": 4,
+			"followingId": 5
+		},
+		{
+			"message": "With the people who pass these filters I try to schedule an interview.",
+			"id": 5,
+			"followingId": 101
+		},
+		{
+			"id": 101,
+			"replies": [
+				{
+					"message": "Is there some other agenda you take care of when needed?",
+					"followingId": 6
+				}
+			]
+		},
+		{
+			"message": "Well, if the interview doesn't go great and Bert doesn't wanna hire him, I schedule another interview.",
+			"id": 6,
+			"followingId": 7
+		},
+		{
+			"message": "It's the same when the applicant rejects us.",
+			"id": 7,
+			"followingId": 8
+		},
+		{
+			"message": "But when he want's to be hired, I'm the person who does the paperworks. Then the process is over.",
+			"id": 8,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Is there some other agenda you take care of when needed?",
+					"followingId": 9
+				}
+			]
+		},
+		{
+			"message": "But when he want's to be hired, I'm the person who does the paperworks. Then the process is over.",
+			"id": 9,
+			"followingId": 102
+		},
+		{
+			"id": 102,
+			"replies": [
+				{
+					"message": "Oh, thanks.",
+					"followingId": 10
+				}
+			]
+		},
+		{
+			"message": "Sure, stop by anytime if you need something.",
+			"id": 10,
 			"followingId": false
 		}
 	]

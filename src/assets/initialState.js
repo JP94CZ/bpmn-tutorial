@@ -10,6 +10,7 @@ import mollusc from './pictures/mollusc.jpeg';
 import clutterbuck from './pictures/Clutterbuck.png';
 import schwarz from './pictures/schwarz.jpeg';
 import ima from './pictures/ima.png';
+import adalbert from './pictures/adalbert.jpg';
 import process from './proccess.json';
 
 export const initialState = {
@@ -50,7 +51,7 @@ export const initialState = {
           },
           {
             photo: hobitphile,
-            name: 'Michael Hobitphile',
+            name: 'Michael Hobithile',
             title: 'Project manager',
             conversation: "michaelHobitphile",
             id: 1,
@@ -80,7 +81,7 @@ export const initialState = {
             photo: polan,
             name: 'Jan Polan',
             title: 'Creator',
-            conversation: "janPolan-chapterOne",
+            conversation: "janPolan-two",
             id: 0,
             conversationProgress: [],
             conversationFinalLength: null,
@@ -128,7 +129,7 @@ export const initialState = {
             photo: polan,
             name: 'Jan Polan',
             title: 'Creator',
-            conversation: "janPolan-chapterOne",
+            conversation: "janPolan-three",
             id: 0,
             conversationProgress: [],
             conversationFinalLength: null,
@@ -147,9 +148,37 @@ export const initialState = {
           {
             photo: schwarz,
             name: 'Cindy Schwarz',
-            title: 'Client support assistant',
-            conversation: "lucasMullusc",
+            title: 'HR assistant',
+            conversation: "cindySchwarz",
             id: 2,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          },
+          {
+            photo: adalbert,
+            name: 'Adalbert Spilka',
+            title: 'HR manager',
+            conversation: "adalbertSpilka",
+            id: 3,
+            conversationProgress: [],
+            conversationFinalLength: null,
+            finished: false
+          }
+        ]
+      },
+      {
+        name: 'Epilogue',
+        finished: false,
+        process: null,
+        processSolution: null,
+        conversations: [
+          {
+            photo: polan,
+            name: 'Jan Polan',
+            title: 'Creator',
+            conversation: "janPolan-epilogue",
+            id: 0,
             conversationProgress: [],
             conversationFinalLength: null,
             finished: false
