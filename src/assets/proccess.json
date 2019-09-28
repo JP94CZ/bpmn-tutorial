@@ -221,7 +221,7 @@
             ]
         },
         {
-            "lane": "Lane_1xeo2x9",
+            "lane": "Lane_13haohx",
             "elements": [
                 {
                     "id": "Task_1qnsc4e",
@@ -248,7 +248,7 @@
             ]
         },
         {
-            "lane": "Lane_1xeo2x9",
+            "lane": "Lane_0fvibs4",
             "elements": [
                 {
                     "id": "Task_1j403y7",
@@ -312,7 +312,7 @@
                 {
                     "id": "StartEvent_0p9a2n5",
                     "label": "Need for access",
-                    "connections": "Task_0kcqv7a"
+                    "connections": ["Task_0kcqv7a"]
                 }
             ]
         },
